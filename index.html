@@ -1,0 +1,795 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+<!--[if lte IE 6]>
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-ie6.css">
+<![endif]-->
+<!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css" href="bootstrap/css/ie.css">
+<![endif]-->
+<link rel="stylesheet" href="stylesheets/custom.css">
+<link rel="stylesheet" href="stylesheets/base.css">
+<link rel="stylesheet" href="stylesheets/common.css">
+<link rel="stylesheet" href="stylesheets/font-awesome.min.css">
+<!--地产圈人物滚动-->
+<script type="text/javascript" src="js/ad_ls.js"></script>
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+$(window).scroll(function(){
+  $("#toc_container").css("top",Math.max(0,160-$(this).scrollTop()));
+});
+</script>
+</head>
+
+<body >
+<div id="miniTop">
+  <div  class="miniLogin">
+    <label>用户名：</label>
+    <input id="username" class="loginTxtInt" type="text" name="username">
+    <label>密码：</label>
+    <input id="password" class="loginTxtInt" type="password" name="password">
+    <input type="hidden" value="login" name="action">
+    <input type="hidden" value="3" name="r">
+    <input class="loginBut" type="submit" value="登录">
+    <a class="regBut" >注册</a> </div>
+  <div  class="minimg"> <img  src="img/wb.png"/> </div>
+  <div  class="minimg ml5"> <img  src="img/style.png"  style=" height:20px;"/> </div>
+  <div class="miniright"> <a href="">首页</a> <a href="">团购</a> <a href="">新房</a> <a href="">二手房</a> </div>
+</div>
+<div class="container">
+  <div class="pull-left mt20"> <img  src="img/logo.gif"/> </div>
+  <div class="  pull-left f16  pt55 "> <span  class="cr mr10">漳州</span> <a href="">厦门</a> </div>
+  <div class="pull-left mt30 ml30">
+    <div class="tabbable "> 
+      <!-- Only required for left/right tabs -->
+      <ul  id="myTab" class="nav nav-tabs"  style="margin:0">
+        <li class="active "><a href="#tab1" data-toggle="tab" class="pl20 pr20">综合</a></li>
+        <li><a href="#tab2" data-toggle="tab">新房</a></li>
+        <li><a href="#" data-toggle="tab">租房</a></li>
+        <li><a href="#" data-toggle="tab">团购</a></li>
+        <li><a href="#" data-toggle="tab">专题</a></li>
+      </ul>
+      <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade active in " id="tab1">
+          <form action="{APP_PATH}index.php" class="form-inline  m0" role="form" name="myform" method="get">
+            <input type="text" class="form-control" name="keyword"  id="keyword" placeholder="请输入关键字" style="width:625px;">
+            <button type="submit" class="btn btn-danger">搜索</button>
+          </form>
+        </div>
+        <div class="tab-pane" id="tab2">
+          <form action="{APP_PATH}index.php" class="form-inline  m0" role="form" name="myform" method="get">
+            <select name="catid" id="catid" class="form-control selectS">
+              <option  value='9'>所属区域</option>
+              <option value="">芗城区</option>
+              <option value="">龙文区</option>
+              <option value="">龙文区</option>
+            </select>
+            <select name="bankuai" id="price" class="form-control selectS">
+              <option value=''>所属板块</option>
+              <option value='1'>城西</option>
+              <option value='2'>城西</option>
+            </select>
+            <select name="city" id="city" class="form-control selectS">
+              <option value=''>物业类型</option>
+              <option value=''>酒店式公寓</option>
+              <option value=''>普通住宅</option>
+            </select>
+            <input type="text" class="form-control" name="keyword"  id="keyword" placeholder="请输入关键字" style="width:305px;">
+            <button type="submit" class="btn btn-danger">搜索</button>
+            <input type="hidden" name="m" value="content">
+            <input type="hidden" name="c" value="index">
+            <input type="hidden" name="a" value="searchpr">
+            <input type="hidden" name="dosubmit" value="1">
+          </form>
+        </div>
+        <div class="tab-pane" id="tab3"> 
+          <!--预留--> 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--导航-->
+<div style="height:70px;"> </div>
+<div class="newnav" id="toc_container" align="center" > <a href="#">资讯</a>| <a  href="#">新房</a>| <a  href="#">团购</a>| <a  href="#">地图找房</a>| <a  href="#">租房</a>| <a  href="#">二手房</a> </div>
+<!--header end-->
+<div class="container"> 
+  <!--左边-->
+  <div  class="pull-left ">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">漳州新房</h3>
+      </div>
+      <div class="panel-body " >
+        <div  style="border-bottom: 1px solid #EEEEEE; height:75px;">
+          <h4 style="color:#f65c52" class=" f16 mt5 mb5">芗城区</h4>
+          <p> <a class="areaa" target="_blank" title="永鸿国际城" href="#">永鸿国际城</a> <a class="areaa" style="color: #333;" target="_blank" title="夏商书香名苑" href="#">夏商书香名苑</a> <a  class="areaa" title="漳州万科城" target="_blank" href="#">漳州万科城</a> <a   class="areaa" style="color:#333;" target="_blank" title="民兴北郡云鼎" href="#">民兴北郡云鼎</a> </p>
+        </div>
+        <div  style="border-bottom: 1px solid #EEEEEE; height:75px;">
+          <h4 style="color:#f65c52" class=" f16 mt5 mb5">龙文</h4>
+          <p> <a class="areaa" target="_blank" title="中骏蓝湾香郡" href="#">中骏蓝湾香郡</a> <a class="areaa" style="color: #333;" target="_blank" title="惠祥香槟左岸" href="#">宏景花园</a> <a  class="areaa" title=" 福隆城" target="_blank" href="#"> 福隆城</a> <a   class="areaa" style="color:#333;" target="_blank" title="永年公园美学" href="#">永年公园美学</a> <a   class="areaa" style="color:#333;" target="_blank" title="港城御龙湾" href="#">港城御龙湾</a> </p>
+        </div>
+        <div  style="border-bottom: 1px solid #EEEEEE; height:75px;">
+          <h4 style="color:#f65c52" class=" f16 mt5 mb5">龙文</h4>
+          <p> <a class="areaa" target="_blank" title="中骏蓝湾香郡" href="#">中骏蓝湾香郡</a> <a class="areaa" style="color: #333;" target="_blank" title="惠祥香槟左岸" href="#">宏景花园</a> <a  class="areaa" title=" 福隆城" target="_blank" href="#"> 福隆城</a> <a   class="areaa" style="color:#333;" target="_blank" title="永年公园美学" href="#">永年公园美学</a> <a   class="areaa" style="color:#333;" target="_blank" title="港城御龙湾" href="#">港城御龙湾</a> </p>
+        </div>
+        <div  style="border-bottom: 1px solid #EEEEEE; height:75px;">
+          <h4 style="color:#f65c52" class=" f16 mt5 mb5">龙文</h4>
+          <p> <a class="areaa" target="_blank" title="中骏蓝湾香郡" href="#">中骏蓝湾香郡</a> <a class="areaa" style="color: #333;" target="_blank" title="惠祥香槟左岸" href="#">宏景花园</a> <a  class="areaa" title=" 福隆城" target="_blank" href="#"> 福隆城</a> <a   class="areaa" style="color:#333;" target="_blank" title="永年公园美学" href="#">永年公园美学</a> <a   class="areaa" style="color:#333;" target="_blank" title="港城御龙湾" href="#">港城御龙湾</a> </p>
+        </div>
+        <div  style="border-bottom: 1px solid #EEEEEE; height:75px;">
+          <h4 style="color:#f65c52" class=" f16 mt5 mb5">龙文</h4>
+          <p> <a class="areaa" target="_blank" title="中骏蓝湾香郡" href="#">中骏蓝湾香郡</a> <a class="areaa" style="color: #333;" target="_blank" title="惠祥香槟左岸" href="#">宏景花园</a> <a  class="areaa" title=" 福隆城" target="_blank" href="#"> 福隆城</a> <a   class="areaa" style="color:#333;" target="_blank" title="永年公园美学" href="#">永年公园美学</a> <a   class="areaa" style="color:#333;" target="_blank" title="港城御龙湾" href="#">港城御龙湾</a> </p>
+        </div>
+        <div  style="border-bottom: 1px solid #EEEEEE; height:75px;">
+          <h4 style="color:#f65c52" class=" f16 mt5 mb5">龙文</h4>
+          <p> <a class="areaa" target="_blank" title="中骏蓝湾香郡" href="#">中骏蓝湾香郡</a> <a class="areaa" style="color: #333;" target="_blank" title="惠祥香槟左岸" href="#">宏景花园</a> <a  class="areaa" title=" 福隆城" target="_blank" href="#"> 福隆城</a> <a   class="areaa" style="color:#333;" target="_blank" title="永年公园美学" href="#">永年公园美学</a> <a   class="areaa" style="color:#333;" target="_blank" title="港城御龙湾" href="#">港城御龙湾</a> </p>
+        </div>
+        <div  style="border-bottom: 1px solid #EEEEEE; height:75px;">
+          <h4 style="color:#f65c52" class=" f16 mt5 mb5">龙文</h4>
+          <p> <a class="areaa" target="_blank" title="中骏蓝湾香郡" href="#">中骏蓝湾香郡</a> <a class="areaa" style="color: #333;" target="_blank" title="惠祥香槟左岸" href="#">宏景花园</a> <a  class="areaa" title=" 福隆城" target="_blank" href="#"> 福隆城</a> <a   class="areaa" style="color:#333;" target="_blank" title="永年公园美学" href="#">永年公园美学</a> <a   class="areaa" style="color:#333;" target="_blank" title="港城御龙湾" href="#">港城御龙湾</a> </p>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">帮你找房</h3>
+      </div>
+      <div class="panel-body " >
+        <div  style="border-bottom: 1px solid #EEEEEE; height:75px;">
+          <h4 style="color:#f65c52" class=" f16 mt5 mb5">价格</h4>
+          <p> <a class="areab" target="_blank" title="3000-4000" href="#">3000-4000</a> <a class="areab" style="color: #333;" target="_blank" title="4000-5000" href="#">4000-5000</a> <a   title="5000-6000" target="_blank" href="#">5000-6000</a> <a   class="areab" style="color:#333;" target="_blank" title="6000-7000" href="#">6000-7000</a> <a   class="areab" style="color:#333;" target="_blank" title="7000-8000" href="#">7000-8000</a> <a   title="5000-6000" target="_blank" href="#">8000以上</a> </p>
+        </div>
+        <div  style=" height:75px;">
+          <h4 style="color:#f65c52"  class=" f16 mt5 mb5">面积</h4>
+          <p> <a class="areaa" target="_blank" title="50m&sup2 以下" href="#">50m&sup2 以下</a> <a class="areaa" style="color: #333;" target="_blank" title="50-90m&sup2;" href="#">50-90m&sup2;</a> <a  class="areaa" title="90-120m&sup2;" target="_blank" href="#">90-120m&sup2;</a> <a   class="areaa" style="color:#333;" target="_blank" title="120-150m&sup2;" href="#">120-200m&sup2;</a> <a   class="areaa" style="color:#333;" target="_blank" title="150-200m&sup2;" href="#">200m&sup2 以上</a> </p>
+        </div>
+        <button class="btn btn-mini" type="button" style="height:28px; width:58px">区域</button>
+        <select name="area" id="area" class="selectS" style="margin:3px 0px 0px 0px">
+          <option value=''>芗城区</option>
+          <option value='1'>5漳州港</option>
+          <option value='2'>龙海</option>
+        </select>
+        <button class="btn btn-mini" type="button" style="height:28px; width:58px">板块</button>
+        <select name="area" id="area" class="selectS " style="margin:3px 0px 0px 0px">
+          <option value=''>芗城区</option>
+          <option value='1'>5漳州港</option>
+          <option value='2'>龙海</option>
+        </select>
+        <input type="text" class="form-control mt10" name="keyword" 
+          id="keyword" placeholder="请输入关键字" style="width:110px;">
+        <button type="submit" class="btn btn-danger btn-mini" style="height:28px; width:58px">搜索</button>
+      </div>
+    </div>
+  </div>
+  <!--左边end--> 
+  <!--右边-->
+  <div class="pull-left ml20">
+    <div  class="pull-left"> <img src="upload/img/ad.jpg"   style="height:58px; width:900px;"> </div>
+    <div class="clearfix"> </div>
+    <div class="pull-left pt10"> <img src="img/jrtt.gif"> </div>
+    <div  class="pull-left ml10">
+      <h3 style="color:#2db8ad">"地王围城"11幅高价地今年入市今年厦门岛内房价6万/平，你信吗?</h3>
+      <p>【调查】 1月厦门房价环涨居全国第1，您咋看？1月厦门房价环涨居全国第1，您咋价环涨居全国第1，您咋看？1月厦门房？<a href="#" class="cr" >详情</a></p>
+    </div>
+  </div>
+  <!--右边中-->
+  <div  class="l_new2 pull-left ml20" style="border-right: 1px solid #EEEEEE; width:410px;" >
+    <div class="title_l">
+      <p>新房速递</p>
+    </div>
+    <div class="title_r"> <a href="" class="pr15 pull-right mt5">更多</a> </div>
+    <div class="pull-left"> <a href="">
+      <h4>漳州丽园君悦：最符合《星星》家的漳州楼盘 </h4>
+      </a>
+      <p><a href="http://www.baidu.com">明发商业广场住在基本新手 锥体 3#、5#点秒</a></p>
+      <a href="">
+      <h4>漳州丽园君悦：最符合《星星》家的漳州楼盘 </h4>
+      </a>
+      <p><a href="#"> 鸿达嘉园酒店式公寓去化一半 均价6500元/m2</a></p>
+      <div class="boder_line"> </div>
+      <a href="">
+      <h4>漳州丽园君悦：最符合《星星》家的漳州楼盘 </h4>
+      </a>
+      <p><a href="http://www.baidu.com">明发商业广场住在基本新手 锥体 3#、5#点秒</a></p>
+      <p><a href="#"> 万达中央化成：前任通宵强二期 全程热捧 很期待</a></p>
+      <p><a href="#"> 鸿达嘉园酒店式公寓去化一半 均价6500元/m2</a></p>
+    </div>
+    <div class="title_l">
+      <p>楼盘优惠</p>
+    </div>
+    <div class="title_r"> <a href="" class="pr15 pull-right mt5">更多</a> </div>
+    <div class="pull-left"> <a href="">
+      <h4>漳州丽园君悦：最符合《星星》家的漳州楼盘 </h4>
+      </a>
+      <p><a href="http://www.baidu.com">明发商业广场住在基本新手 锥体 3#、5#点秒</a></p>
+      <p><a href="#"> 万达中央化成：前任通宵强二期 全程热捧 很期待</a></p>
+      <p><a href="#"> 鸿达嘉园酒店式公寓去化一半 均价6500元/m2</a></p>
+      <div class="boder_line"> </div>
+      <a href="">
+      <h4>漳州丽园君悦：最符合《星星》家的漳州楼盘 </h4>
+      </a>
+      <p><a href="http://www.baidu.com">明发商业广场住在基本新手 锥体 3#、5#点秒</a></p>
+      <p><a href="#"> 万达中央化成：前任通宵强二期 全程热捧 很期待</a></p>
+      <p><a href="#"> 鸿达嘉园酒店式公寓去化一半 均价6500元/m2</a></p>
+    </div>
+    <div class="title_l">
+      <p>市场报告</p>
+    </div>
+    <div class="title_r"> <a href="" class="pr15 pull-right mt5">更多</a> </div>
+    <div class="pull-left"> <a href="">
+      <h4>漳州丽园君悦：最符合《星星》家的漳州楼盘 </h4>
+      </a>
+      <p><a href="http://www.baidu.com">明发商业广场住在基本新手 锥体 3#、5#点秒</a></p>
+      <p><a href="#"> 万达中央化成：前任通宵强二期 全程热捧 很期待</a></p>
+      <p><a href="#"> 鸿达嘉园酒店式公寓去化一半 均价6500元/m2</a></p>
+    </div>
+  </div>
+  <!--右边右-->
+  <div class="pull-left ml20" >
+    <div  style="border: 1px solid #EEEEEE; height:270px;"> <a href="#"> <img src="upload/img/ad1.jpg"  style="width:445px; height:222px;" class=" pt10 pl10"> </a>
+      <div class="mt10 ml10" >
+        <p class="f16"> <a href="" class="pull-left" >水岸新城国际大晒优惠大酬宾 还等什么呢</a> <a href="" class="pull-right mr20 cr">更多团购>></a> </p>
+      </div>
+    </div>
+    <div class="mt10  pt10 pl5 pb10" style="border: 1px solid #EEEEEE;">
+      <div id="myCarousel" class="carousel slide m0" style="width:462px;">
+        <div class="carousel-inner">
+          <div class="item active"> <img src="img/bootstrap-slide-01.jpg"   alt="">
+            <div class="carousel-caption" style="padding:10px;">
+              <h4 class="lh150">罗兰春天地暖精装3房热 </h4>
+            </div>
+          </div>
+          <div class="item"> <img src="img/bootstrap-slide-02.jpg" alt="">
+            <div class="carousel-caption" style="padding:10px;">
+              <h4>皇家大三精装3房热 </h4>
+            </div>
+          </div>
+          <div class="item"> <img src="img/bootstrap-slide-03.jpg" alt="">
+            <div class="carousel-caption"  style="padding:10px;">
+              <h4>罗兰春天地暖精装3房热吴涛</h4>
+            </div>
+          </div>
+        </div>
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a> <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a> </div>
+    </div>
+    <div class="mt10 " style="border: 1px solid #EEEEEE; height:240px; ">
+      <div class="title_l">
+        <p>&nbsp;专题</p>
+      </div>
+      <div class="title_r" style="width:380px;"> <a href="" class="pr15 pull-right mt5">更多</a> </div>
+      <div class="clearfix"> </div>
+      <div style="width:465px; word-wrap: break-word; word-break: normal; margin-top:4px; " class="pull-left m5">
+        <p class="f16 lh200"><img class="img-polaroid mr20" src="upload/img/ad3.jpg"  style="width:265px; height:150px;" align="left"> <strong><a  href="" class="f18 cl" >港城御龙湾</a></strong><br>
+          定制型精英公馆，幸福开启定制型精英公馆，幸福开启定制型精英公馆，幸福开启港城御龙湾：定制型精英公馆型精英公馆，幸幸福开启定型,优惠... <a style="color:#f65c52" href="#">[详情]</a></p>
+      </div>
+    </div>
+  </div>
+  <!--end 右边右 --> 
+  <!--右边end--> 
+  <!--二楼新房板块-->
+  <div class="clearfix"> </div>
+  <div style="background:url(img/ban.gif); height:53px; width:103px;" class="pull-left"> </div>
+  <div style="background:url(img/ban2.gif);height:53px; width: 1067px; background-repeat:repeat-x" class="pull-left">
+    <h4 style="color:#FFF; margin-top:24px;">新房</h4>
+  </div>
+  <div class="clearfix  mb15"> </div>
+  <!--左边-->
+  <div  class="pull-left " style="width:248px;">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title ">楼盘推荐 <a href="#"  class="pull-right f14">更多></a> </h3>
+      </div>
+      <div class="panel-body " >
+        <table class="table table-condensed ">
+          <thead>
+            <tr style="color:#f65c52">
+              <th>楼盘名称</th>
+              <th>区属</th>
+              <th>价格</th>
+            </tr>
+          </thead>
+          <tr>
+            <td>华府国际</td>
+            <td>芗城</td>
+            <td>8000元/&sup2;</td>
+          </tr>
+          <tr>
+            <td>湘江北岸新城</td>
+            <td>龙文</td>
+            <td>8500元/&sup2;</td>
+          </tr>
+          <tr>
+            <td>张龙御景豪宅</td>
+            <td>芗城</td>
+            <td>7000元/&sup2;</td>
+          </tr>
+          <tr>
+            <td>华府国际</td>
+            <td>芗城</td>
+            <td>8000元/&sup2;</td>
+          </tr>
+          <tr>
+            <td>华府国际</td>
+            <td>芗城</td>
+            <td>8000元/&sup2;</td>
+          </tr>
+          <tr>
+            <td>华府国际</td>
+            <td>芗城</td>
+            <td>8000元/&sup2;</td>
+          </tr>
+          <tr>
+            <td>华府国际新城</td>
+            <td>龙海</td>
+            <td>待定</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title ">意向登记 <span class="f12" style="font-weight:normal">|为您提供优质的房源</span></h3>
+      </div>
+      <div class="panel-body " >
+        <form action="">
+          <table class=" table-condensed">
+            <tr>
+              <td>姓名:</td>
+              <td><input type="text" class="form-control" name="name"  id="name" placeholder="请输入联系姓名" style="width:130px;"></td>
+            </tr>
+            <tr>
+              <td>QQ :</td>
+              <td><input type="text" class="form-control" name="qq"  id="qq" placeholder="请输入联系QQ" style="width:130px;"></td>
+            </tr>
+            <tr>
+              <td>电话:</td>
+              <td><input type="text" class="form-control" name="phone"  id="phone" placeholder="请输入联系电话" style="width:130px;"></td>
+            </tr>
+            <tr>
+              <td>楼盘:</td>
+              <td><input type="text" class="form-control" name="keyword"  id="keyword" placeholder="请输入中意楼盘" style="width:130px;"></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><button type="submit" class="btn btn-danger btn-mini" style="height:28px;">立刻报名</button></td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!--end 左边--> 
+  <!--右边-->
+  <div class="pull-left"> 
+    <!--右边中-->
+    <div  class="l_new3 pull-left ml10" style="border-right: 1px solid #EEEEEE; width:420px;" >
+      <div style="width:400px;" class="mb20">
+        <ul id="myTab" class="nav nav-tabs mb5" style="border-bottom: 1px solid #2db8ad;">
+          <li class=" active" style="border-bottom: 1px solid #2db8ad;"><a  data-toggle="tab">今日话题</a></li>
+        </ul>
+        <div id="myTabContent" class="tab-content ">
+          <div class="tab-pane fade active in ">
+            <h3 class="cl" style="margin:0">国土部确定不动产登记工作将在试点城市启动</h3>
+            <p  style="color:#999">美房整理 2014-03-13</p>
+            <div style="margin:20px 0px 20px 0px; border-bottom:1px dotted #CCC; height:90px" >
+              <P>3月10日，国土资源部部长姜大明在两会期间接受记者采访时表示，今年要建立不动产部际联席制度，编制统一调剂,符合现在发展情况...<a href="" class="cr">[详情]</a> </P>
+              <p> <a href="" class="cr pull-right" >往期></a></p>
+            </div>
+            <a  href="#">
+            <li> 漳州全力推进富美城市建设 持续加大项目建设力度 </li>
+            </a> <a  href="#">
+            <li> 角美楼市逆势突围，新房成交尽显生气，已提早进入</li>
+            </a> <a  href="#">
+            <li> 楼市是否真的会如预期所言崩盘？漳州楼市是深陷其中？</li>
+            </a> </div>
+        </div>
+      </div>
+      <div style="width:400px;" class="mb20">
+        <ul id="myTab" class="nav nav-tabs mb5" style="border-bottom: 1px solid #2db8ad;">
+          <li class=" active" style="border-bottom: 1px solid #2db8ad;"><a href="#l_hot" data-toggle="tab">楼市资讯</a></li>
+        </ul>
+        <div id="myTabContent" class="tab-content ">
+          <div class="tab-pane fade active in  " id="l_hot"> <a  href="#" >
+            <li>漳靖打造同城化"桥头堡" 将实现30分钟内通达</li>
+            </a> <a  href="#">
+            <li> 漳州地热资源丰富 温泉旅游地产迎来发展新机遇</li>
+            </a> <a  href="#">
+            <li> 漳州老板姓 温泉旅游地发展市场经理产迎来发展新机遇</li>
+            </a> <a  href="#">
+            <li> 漳市区纳税超千万元企业 房地产企业占半壁江山</li>
+            </a> <a  href="#">
+            <li> 平和文化旅游项目新年开局良好 年度总投资7.5亿 </li>
+            </a> <a  href="#">
+            <li> 漳州全力推进富美城市建设 持续加大项目建设力度 </li>
+            </a> <a  href="#">
+            <li> 角美楼市逆势突围，新房成交尽显生气，已提早进入</li>
+            </a> <a  href="#">
+            <li> 楼市是否真的会如预期所言崩盘？漳州楼市会深陷其中？</li>
+            </a> </div>
+        </div>
+      </div>
+      <div style="width:400px;">
+        <ul id="myTab" class="nav nav-tabs mb5" style="border-bottom: 1px solid #2db8ad;">
+          <li class=" active" style="border-bottom: 1px solid #2db8ad;"><a href="#act" data-toggle="tab">楼市观点</a></li>
+        </ul>
+        <div id="myTabContent" class="tab-content ">
+          <div class="tab-pane fade active in  " id="act"> <a  href="#" >
+            <li>漳靖打造同城化"桥头堡" 将实现30分钟内通达</li>
+            </a> <a  href="#">
+            <li> 漳州地热资源丰富 温泉旅游地产迎来发展新机遇</li>
+            </a> <a  href="#">
+            <li> 漳州老板姓 温泉旅游地发展市场经理产迎来发展新机遇</li>
+            </a> <a  href="#">
+            <li> 漳市区纳税超千万元企业 房地产企业占半壁江山</li>
+            </a> <a  href="#">
+            <li> 平和文化旅游项目新年开局良好 年度总投资7.5亿 </li>
+            </a> <a  href="#">
+            <li> 漳州全力推进富美城市建设 持续加大项目建设力度 </li>
+            </a> <a  href="#">
+            <li> 角美楼市逆势突围，新房成交尽显生气，已提早进入</li>
+            </a> <a  href="#">
+            <li> 楼市是否真的会如预期所言崩盘？漳州楼市会深陷其中？</li>
+            </a> </div>
+        </div>
+      </div>
+    </div>
+    <!--end右边中--> 
+    <!--右边右-->
+    <div class="pull-left ml20" style="width:465px;" >
+      <div class="title2_l" >
+        <h4 style="margin:0px" class=" f16 cr">楼盘活动</h4>
+      </div>
+      <div class="title2_r" align="right"> <a href="">更多</a> </div>
+      <div class="clearfix"> </div>
+      <div class="mt10 ml10 mr10" style="border-bottom:1px solid #EEEEEE;" > <a href="#"><img src="upload/img/ad4.gif"  style="width:445px; height:200px;" ></a> <a href="#"  class="f16 lh200" style="color:#2db8ad"><strong>3月9日厦门湾南岸看房团 享多重独家特惠</strong></a><br>
+        <a href="#"  class="f14 lh200">3月9日，漳州福房网新春首场看房直通车即将起航，带您抢购永鸿厦门湾南岸、永鸿御景湾山海美宅，享多重独家专属购房特惠，助您筑梦南岸！</a> </div>
+      <div class="mt10 ml10 mr10 mb15" style="list-style-type:none" > <a href="#"  class="f16 " ><strong>
+        <li class="lh200">漳州角美万达中央华城二期奢居样板房华</li>
+        </strong></a> <a href="#"  class="f14 ">
+        <li class="lh200">角美万达广场样板房升级</li>
+        </a> <a href="#"  class="f16 " ><strong>
+        <li class="lh200">永鸿厦门湾南岸：3月女人季 美丽"甲天下"</li>
+        </strong></a> <a href="#"  class="f14 ">
+        <li class="lh200">角美万达广场样板房升级</li>
+        </a> <a href="#"  class="f16 cl " ><strong>
+        <li class="lh200">永年公园美学大型交友会圆满落幕</li>
+        </strong></a> <a href="#"  class="f14 ">
+        <li class="lh200">大型交友会</li>
+        </a> </div>
+      <div class="title2_l" >
+        <h4 style="margin:0px" class=" f16 cr">楼盘评测</h4>
+      </div>
+      <div class="title2_r" align="right"> <a href="">更多</a> </div>
+      <div class="clearfix"> </div>
+      <div  style="border: 1px solid #EEEEEE;" class="mt10"> <a href="#"><img src="upload/img/ad5.gif"  style="width:445px; height:200px;" class=" pt10 pl10"></a>
+        <div class="mt10 ml10 mr10" style="border-bottom:1px solid #EEEEEE;" > <a href="#"  class="f16" style="color:#2db8ad">
+          <h4>3月9日厦门湾南岸看房团 享多重独家特惠</h4>
+          </a> <a href="#"  class="f14 lh200">3月9日，漳州福房网新春首场看房直通车即将起航，带您抢购永鸿厦门湾南岸、永鸿御景湾山海美宅，享多重独家专属购房特惠....</a> <a  href="" class="cr">阅读全文>></a> </div>
+        <div class="mt10 ml10 mr10" style="list-style-type:none" > <a  href="#" >
+          <li class="lh180 f16"> 平和文化旅游项目新年开局良好 年度总投资7.5亿 </li>
+          </a> <a  href="#">
+          <li class="lh180 f16"> 漳州全力推进富美城市建设 持续加大项目建设力度 </li>
+          </a> <a  href="#" >
+          <li class="lh180 f16"> 角美楼市逆势突围，新房成交尽显生气，已提早进入</li>
+          </a> </div>
+      </div>
+    </div>
+    <!--end 右边右 --> 
+  </div>
+  <!-- end 右边--> 
+  <!---二楼end--> 
+  <!--三楼地产圈-->
+  <div class="dcq">
+    <div class="clearfix"></div>
+    <div style="background:url(img/ban.gif); height:53px; width:103px;" class="pull-left"></div>
+    <div style="background:url(img/ban2.gif);height:53px; width: 1067px; background-repeat:repeat-x" class="pull-left">
+      <h4 style="color:#FFF; margin-top:24px;">地产圈</h4>
+    </div>
+    <div class="clearfix"></div>
+    <div class="pull-left">
+      <table width="1170px;" class="mt20" >
+        <tr  >
+          <td style="background: url(img/t_1.gif) no-repeat; margin:0px;" width="107px" height="32px"><a1>名人堂</a1></td>
+          <td  align="right" style="border-bottom:1px solid #EEEEEE;"  ><a href="" class="pr20">更多></a></td>
+        </tr>
+      </table>
+    </div>
+    <!-- picrotate_left start  -->
+    <div class="blk_18"> <a class="LeftBotton" onMouseDown="ISL_GoUp_1()" onMouseUp="ISL_StopUp_1()" onMouseOut="ISL_StopUp_1()" href="javascript:void(0);" target="_self"></a>
+      <div class="pcont" id="ISL_Cont_1">
+        <div class="ScrCont">
+          <div id="List1_1"> <a class="pl" href="#" ><img src="upload/img/pic.gif" alt="名人堂" width="130" height="160"/>图片1</a> <a class="pl" href="#" ><img src="upload/img/pic.gif" alt="名人堂" width="130" height="160"/>图片2</a> <a class="pl" href="#" ><img src="upload/img/pic.gif" alt="名人堂" width="130" height="160"/>图片3</a> <a class="pl" href="#" ><img src="upload/img/pic.gif" alt="名人堂" width="130" height="160"/>图片4</a> <a class="pl" href="#" ><img src="upload/img/pic.gif" alt="名人堂" width="130" height="160"/>图片5</a> <a class="pl" href="#" ><img src="upload/img/pic.gif" alt="名人堂" width="130" height="160"/>图片6</a> <a class="pl" href="#" ><img src="upload/img/pic.gif" alt="名人堂" width="130" height="160"/>图片7</a> <a class="pl" href="#" ><img src="upload/img/pic.gif" alt="名人堂" width="130" height="160"/>图片8</a> <a class="pl" href="#" ><img src="upload/img/pic.gif" alt="名人堂" width="130" height="160"/>图片9</a> <a class="pl" href="#" ><img src="upload/img/pic.gif" alt="名人堂" width="130" height="160"/>图片10</a> <a class="pl" href="#" ><img src="upload/img/pic.gif" alt="名人堂" width="130" height="160"/>图片11</a> </div>
+          <div id="List2_1"></div>
+        </div>
+      </div>
+      <a class="RightBotton" onMouseDown="ISL_GoDown_1()" onMouseUp="ISL_StopDown_1()" onMouseOut="ISL_StopDown_1()" href="javascript:void(0);" target="_self"></a> </div>
+    <div class="c"></div>
+    <script type="text/javascript">
+          <!--
+          picrun_ini()
+//-->
+		</script> 
+    <!-- picrotate_left end -->
+    <div class=" pull-left mt10  ml30 mr20"> <img src="upload/img/ad6.gif"  style="width:270px" class="img-polaroid"> </div>
+    <div class="pull-left  mt10" style="width:526px;">
+      <div class="title3_l">
+        <p>活动</p>
+      </div>
+      <div class="title3_r" align="right"> <a href="">更多</a> </div>
+      <img src="upload/img/ad7.gif" class="img-polaroid ml5 mt5"> <img src="upload/img/ad8.gif" class="img-polaroid ml5 mt5">
+      <div class="ml30 lh200"> <a href="#" >
+        <h4 class="f16 cr ">3月9日厦门湾南岸看房团 享多重独家特惠</h4>
+        </a> <a  href="#" >
+        <li > 平和文化旅游项目新年开局良好 年度总投bbbb资7.5亿 </li>
+        </a> <a  href="#">
+        <li > 漳州全力推进富美城市建设 持续加大项目建设力度 </li>
+        </a> <a  href="#" >
+        <li > 平和文化旅游项目新年开局良好 年度总投资7.5亿 </li>
+        </a> <a  href="#">
+        <li > 漳州全力推进富美城市建设 持续加大项目建sdddddddd设力度 </li>
+        </a> </div>
+    </div>
+    <div class="pull-left mt10 ml20">
+      <div class="title2_l" >
+        <h4 style="margin:0px" class=" f16 cr">楼盘评测</h4>
+      </div>
+      <div class="title2_r" align="right" style="width:200px;"> <a href="">更多</a> </div>
+      <div class="clearfix"> </div>
+      <div class="pull-left">
+        <table class="table table-condensed pull-left li_type_none" style="width:280px">
+          <tr>
+            <td><a  href="#">
+              <li > 1  [房产热词]首套房贷</li>
+              </a></td>
+          </tr>
+          <tr>
+            <td><a  href="#">
+              <li >2  [房产热词]房价</li>
+              </a></td>
+          </tr>
+          <tr>
+            <td><a  href="#">
+              <li >3  [房产热词]漳州碧湖商业圈</li>
+              </a></td>
+          </tr>
+          <tr>
+            <td><a  href="#">
+              <li >4  [房产热词]房产证相关问题</li>
+              </a></td>
+          </tr>
+          <tr>
+            <td><a  href="#">
+              <li >5  [房产热词]国五条那些事</li>
+              </a></td>
+          </tr>
+          <tr>
+            <td><a  href="#">
+              <li >6  [房产热词]房产税如何征收</li>
+              </a></td>
+          </tr>
+          <tr>
+            <td><a  href="#">
+              <li >7  [房产热词]公积金贷款问题</li>
+              </a></td>
+          </tr>
+          <tr>
+            <td><a  href="#">
+              <li >8  [房产热词]保障性住房事宜</li>
+              </a></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class=" pull-left ">
+      <div class="title3_l">
+        <p>代理公司</p>
+      </div>
+      <div class="title3_r" align="right"  style="width:1050px"> <a href="">更多</a> </div>
+      <div class="clearfix"> </div>
+      <div id="demo" class="mt20 mb20">
+        <div id="indemo">
+          <div id="demo1"> <a href="#"><img src="upload/logo/1.jpg " border="0" /></a> <a href="#"><img src="upload/logo/2.jpg " border="0" /></a> <a href="#"><img src="upload/logo/3.jpg " border="0" /></a> <a href="#"><img src="upload/logo/4.jpg " border="0" /></a> <a href="#"><img src="upload/logo/5.jpg " border="0" /></a> <a href="#"><img src="upload/logo/6.jpg " border="0" /></a> <a href="#"><img src="upload/logo/7.jpg " border="0" /></a> <a href="#"><img src="upload/logo/8.jpg " border="0" /></a> <a href="#"><img src="upload/logo/9.jpg " border="0" /></a> <a href="#"><img src="upload/logo/10.jpg " border="0" /></a> <a href="#"><img src="upload/logo/11.jpg " border="0" /></a> <a href="#"><img src="upload/logo/12.jpg " border="0" /></a> </div>
+          <div id="demo2"> </div>
+        </div>
+      </div>
+      <script>
+        <!--
+        var speed=20;
+        var tab=document.getElementById("demo");
+        var tab1=document.getElementById("demo1");
+        var tab2=document.getElementById("demo2");
+        tab2.innerHTML=tab1.innerHTML;
+        function Marquee(){
+          if(tab2.offsetWidth-tab.scrollLeft<=0)
+            tab.scrollLeft-=tab1.offsetWidth
+          else{
+            tab.scrollLeft++;
+          }
+        }
+        var MyMar=setInterval(Marquee,speed);
+        tab.onmouseover=function() {clearInterval(MyMar)};
+        tab.onmouseout=function() {MyMar=setInterval(Marquee,speed)};
+        -->
+        </script> 
+    </div>
+  </div>
+  <!--三楼end--> 
+  <!--4楼购房百科-->
+  <div class="baike">
+    <div class="clearfix"></div>
+    <div style="background:url(img/ban.gif); height:53px; width:103px;" class="pull-left"></div>
+    <div style="background:url(img/ban2.gif);height:53px; width: 1067px; background-repeat:repeat-x" class="pull-left">
+      <h4 style="color:#FFF; margin-top:24px;">购房百科</h4>
+    </div>
+    <div class=" pull-left mt10  ml30">
+      <div class="title3_l">
+        <p>购房须知</p>
+      </div>
+      <div class="title3_r" align="right"  style="width:288px"> <a href="">更多</a> </div>
+      <div class="clearfix"> </div>
+      <div class="ml20"> <a href="#"  >
+        <h4 class="f16 cr">3月9日厦门湾南岸看房团 享多重独家特惠</h4>
+        </a> <a  href="#" >
+        <li > 平和文化旅游项目新年开局良好 年度总投资7.5亿 </li>
+        </a> <a  href="#">
+        <li > 漳州全力推进富美城市建设 持续加大项目建设力度 </li>
+        </a> <a  href="#" >
+        <li > 平和文化旅游项目新年开局良好 年度总投资7.5亿 </li>
+        </a> </div>
+      <div class="title3_l">
+        <p>购房警示</p>
+      </div>
+      <div class="title3_r" align="right"  style="width:288px"> <a href="">更多</a> </div>
+      <div class="clearfix"> </div>
+      <div class="ml20"> <a href="#"  >
+        <h4 class="f16 cr">3月9日厦门湾南岸看房团 享多重独家特惠</h4>
+        </a> <a  href="#" >
+        <li > 平和文化旅游项目新年开局良好 年度总投资7.5亿 </li>
+        </a> <a  href="#">
+        <li > 漳州全力推进富美城市建设 持续加大项目建设力度 </li>
+        </a> <a  href="#" >
+        <li > 平和文化旅游项目新年开局良好 年度总投资7.5亿 </li>
+        </a> </div>
+    </div>
+    <div class=" pull-left mt10  ml30">
+      <div class="title3_l">
+        <p>购房警示</p>
+      </div>
+      <div class="title3_r" align="right"  style="width:288px"> <a href="">更多</a> </div>
+      <div class="clearfix"></div>
+      <div class="ml10">
+        <P class="m0"> <a href="#"  class="f16  lh200 cr" ><strong>3月9日厦门湾南岸看房团 享多重独家特惠</strong></a></P>
+        <p class="m0"> <a href="#"  class="f16  lh200" ><strong>3月9日厦门湾南岸看房团 享多重独家特惠</strong></a></p>
+        <P class="m0"> <a href="#"  class="f16  lh200" ><strong>3月9日厦门湾南岸看房团 享多重独家特惠</strong></a></p>
+        <P class="m0"> <a href="#"  class="f16  lh200" ><strong>3月9日厦门湾南岸看房团 享多重独家特惠</strong></a></p>
+        <img src="upload/img/ad5.gif" class=" img-polaroid  ml10" style="width:360px;"> </div>
+    </div>
+    <div class=" pull-left ml30 mt15 ">
+      <div class="title2_l" >
+        <h4 style="margin:0px" class=" f16 cr">楼盘评测</h4>
+      </div>
+      <div class="title2_r" align="right" style="width:175px;"> <a href="">更多</a> </div>
+      <div class="clearfix"> </div>
+      <table class="table table-condensed li_type_none">
+        <tr>
+          <td><a  href="#">
+            <li   > 1  [房产热词]首套房贷</li>
+            </a></td>
+        </tr>
+        <tr>
+          <td><a  href="#">
+            <li >2  [房产热词]房价</li>
+            </a></td>
+        </tr>
+        <tr>
+          <td><a  href="#">
+            <li >3  [房产热词]漳州碧湖商业圈</li>
+            </a></td>
+        </tr>
+        <tr>
+          <td><a  href="#">
+            <li >4  [房产热词]房产证相关问题</li>
+            </a></td>
+        </tr>
+        <tr>
+          <td><a  href="#">
+            <li >5  [房产热词]国五条那些事</li>
+            </a></td>
+        </tr>
+        <tr>
+          <td><a  href="#">
+            <li >6  [房产热词]房产税如何征收</li>
+            </a></td>
+        </tr>
+        <tr>
+          <td><a  href="#">
+            <li >7  [房产热词]公积金贷款问题</li>
+            </a></td>
+        </tr>
+        <tr>
+          <td><a  href="#">
+            <li >8  [房产热词]保障性住房事宜</li>
+            </a></td>
+        </tr>
+      </table>
+    </div>
+    <div class="clearfix" ></div>
+    <div class="tool">
+      <table class="table table-bordered ">
+        <thead>
+          <tr  bgcolor="#ececec">
+            <th>房贷计算器</th>
+            <th>购房计算器</th>
+            <th>前期准备</th>
+            <th>买房技巧</th>
+            <th>实地看房</th>
+            <th>楼盘比较</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr >
+            <td  ><a href="#">购房能力评估计算器</a><br>
+              <a href="#">购房能力评估计算器</a><br></td>
+            <td><a href="#">购房能力评估计算器</a></td>
+            <td><a href="#">购房能力评估计算器</a></td>
+            <td><a href="#">购房能力评估计算器</a></td>
+            <td><a href="#">购房能力评估计算器</a></td>
+            <td><a href="#">购房能力评估计算器</a></td>
+          </tr>
+          <tr  bgcolor="#ececec">
+            <th>认购</th>
+            <th>合同</th>
+            <th>贷款</th>
+            <th>物业</th>
+            <th>收房</th>
+            <th>房产证</th>
+          </tr>
+          <tr>
+            <td><a href="#">购房能力评估计算器</a><br>
+              <a href="#">购房能力评估计算器</a><br></td>
+            <td><a href="#">购房能力评估计算器</a></td>
+            <td><a href="#">购房能力评估计算器</a></td>
+            <td><a href="#">购房能力评估计算器</a></td>
+            <td><a href="#">购房能力评估计算器</a></td>
+            <td><a href="#">购房能力评估计算器</a></td>
+          </tr>
+        </tbody>
+      </table>
+      <!--友情链接-->
+      <table class="table table-bordered">
+        <tr>
+          <td bgcolor="#ececec" width="192px;"><p align="center"><strong>友情链接</strong></p>
+            <a href=""  class="ml30">
+            <input class="btn btn-info" value="申请链接>" style="background:#2db8ad; width:90px;" >
+            </a></td>
+          <td  class="yqlj"><a>池州房产网</a> <a>苏州租房</a> <a>包头房产网</a> <a>威海房地产</a> <a>襄阳房产</a> <a>超市网盐</a> <a>城房产网</a> <a>大连房产网</a> <a>石家庄看房团</a> <a>重庆房地产</a> <a>东莞房产</a> <a>桐乡房产</a> <a>上海租房网</a></td>
+        </tr>
+      </table>
+      <!--end友情链接--> 
+    </div>
+  </div>
+  <!--end楼购房百科--> 
+</div>
+<!--con end--> 
+<!--footer-->
+<div class="text-center  projectList pb5"> <a>关于美房</a> <a>|</a> <a>联系我们</a> <a>|</a> <a>网络营销</a> <a>|</a> <a>招聘信息</a> <a>|</a> <a>版权声明</a> <a>|</a> <a>网站地图</a> </div>
+<div class="text-center"> &copy;2014&nbsp;&nbsp;71zls&nbsp;&nbsp;版权所有 <a href="http://www.miitbeian.gov.cn" target="_blank">闽ICP备13021172号</a> </div>
+<!-- jQuery 1.7.2 or higher --> 
+
+<!-- Optional, bootstrap javascript library --> 
+<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script> 
+
+<!--[if lte IE 6]>
+  <!-- bsie js 补丁只在IE6中才执行 -->
+  <script type="text/javascript" src="js/bootstrap-ie.js"></script>
+  <![endif]-->
+
+</body>
+</html>

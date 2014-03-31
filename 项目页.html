@@ -1,0 +1,576 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+<!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-ie6.css">
+  <![endif]-->
+<!--[if lte IE 7]>
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/ie.css">
+  <![endif]-->
+<link rel="stylesheet" href="stylesheets/custom.css">
+<link rel="stylesheet" href="stylesheets/base.css">
+<link rel="stylesheet" href="stylesheets/common.css">
+<!--地产圈人物滚动-->
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/2012newHome.js"></script>
+</head>
+
+<body >
+<div id="miniTop">
+  <div  class="miniLogin">
+    <label>用户名：</label>
+    <input id="username" class="loginTxtInt" type="text" name="username">
+    <label>密码：</label>
+    <input id="password" class="loginTxtInt" type="password" name="password">
+    <input type="hidden" value="login" name="action">
+    <input type="hidden" value="3" name="r">
+    <input class="loginBut" type="submit" value="登录">
+    <a class="regBut" >注册</a> </div>
+  <div  class="minimg"> <img  src="img/wb.png"/> </div>
+  <div  class="minimg ml5"> <img  src="img/style.png"  style=" height:20px;"/> </div>
+  <div class="miniright"> <a>首页</a><a>新房</a><a>二手房</a><a>团购</a> </div>
+</div>
+<div class="container">
+  <div class="pull-left mt20"> <img  src="img/logo.gif"/> </div>
+  <div class="  pull-left f16  pt55 "><span style="color:#f65c52">漳州</span> &nbsp;<a>厦门</a></div>
+  <div class="pull-left mt30 ml30">
+    <div class="tabbable "> <!-- Only required for left/right tabs -->
+      <ul class="nav nav-tabs" style="margin:0;">
+        <li class="active" ><a href="#tab1" data-toggle="tab" style=" background:#2db8ad; color:#FFF" >综合</a></li>
+        <li><a href="#tab2" data-toggle="tab">新房</a></li>
+        <li><a href="#tab" data-toggle="tab">租房</a></li>
+        <li><a href="#tab2" data-toggle="tab">团购</a></li>
+        <li><a href="#tab2" data-toggle="tab">专题</a></li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane active" id="tab1">
+          <form action="{APP_PATH}index.php" class="form-inline " role="form" name="myform" method="get">
+            <input type="text" class="form-control" name="keyword" 
+            id="keyword" placeholder="请输入关键字" style="width:625px;">
+            <button type="submit" class="btn btn-danger">搜索</button>
+          </form>
+        </div>
+        <div class="tab-pane" id="tab2">
+          <p>Howdy, I'm in Section 2.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--导航-->
+<div class="newnav" align="center" > <a href="#">资讯</a>|<a  href="#">新房</a>|<a  href="#">专题</a>|<a  href="#">团购</a>|<a  href="#">地图找房</a>|<a  href="#">资讯</a>|<a  href="#">二手房</a> </div>
+<!--header end-->
+<div class="container">
+  <div class=" pr_title pull-left mb10">
+    <h2 class="pull-left">大华锦绣化成</h2>
+    <input class="btn pull-left mt20 f12 ml10" type="button" value="在售" style=" background:#f65c52; color:#FFF">
+    <p class="pull-left pt30 pl10">(项目名称:大华锦绣华城)</p>
+    <p class="pull-right mt20">售楼电话：<strong class="cr">400-1234567-887</strong> 找售楼处 <a class="btn " style=" background:#f65c52; color:#FFF">免费通话</a></p>
+  </div>
+  <div class="clearfix"></div>
+  <div class="prnav ">
+    <div style="background:url(img/prt.gif); height:40px; width:104px;" class="pull-left"> <a  href="#"  class="ml10" style="padding:0">楼盘首页</a> </div>
+    <div style="background:url(img/prt1.gif);height:40px; width: 1066px; background-repeat:repeat-x" class="pull-left"> <a href="#" > 项目介绍 </a> <a href="#">户型图 </a> <a href="#">销售动态</a> <a href="#">价格行情 </a> <a href="#">交通配套 </a> <a href="#">楼盘相册</a> </div>
+  </div>
+  <div class="clearfix"></div>
+  <div class="pr_info">
+    <div class="pull-left">
+      <div class="item-tab mt20">
+        <div class="panel" style="display: block;"> <a href="http://newhouse.house365.com/aifeiguoji/xc/type-5/" target="_blank"><img src="upload/img/138732846552b0f3d11c87b.jpg" title="艾菲国际-艾菲国际景观示意图（12.18）" target="_blank" style="width:340px; height:257px"></a> </div>
+        <div class="panel" style="display: none;"> <a href="http://newhouse.house365.com/aifeiguoji/xc/type-6/" target="_blank"><img src="upload/img/138812355652bd15a4a9784.jpg" title="艾菲国际-艾菲国际临时售楼处实景图（12.27）" target="_blank" style="width:340px; height:257px"></a> </div>
+        <div class="panel" style="display: none;"> <a href="http://newhouse.house365.com/aifeiguoji/xc/type-3/" target="_blank"><img src="upload/img/138732779652b0f13498ae9.jpg" title="艾菲国际-艾菲国际89㎡C2户型图（12.18）" target="_blank" style="width:340px; height:257px"></a> </div>
+        <ul class="tag clearfix" style="z-index:999">
+          <li class="on"><a href="http://newhouse.house365.com/aifeiguoji/xc/type-5/" target="_blank">效果图</a></li>
+          <li class=""><a href="http://newhouse.house365.com/aifeiguoji/xc/type-6/" target="_blank">交通图</a></li>
+          <li class=""><a href="http://newhouse.house365.com/aifeiguoji/xc/type-3/" target="_blank">户型图</a></li>
+        </ul>
+        <div class="cover"></div>
+      </div>
+      <div class="panel panel-primary mt20" style="width:338px">
+        <div class="panel-heading">
+          <h3 class="panel-title ">优惠信息 <a href="#"  class="pull-right f14">更多></a></h3>
+        </div>
+        <div class="panel-body " >
+          <p class="f16 cl">锦绣华城：同安大型湿地公园就在家门口</p>
+          <p class="f14 lh180">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MEIFANG消息 东溪流域彻底整治、清风园扩建，今年同安东溪西洋溪段首个6万平开放式湿地公园打造在即、东溪沿岸不行、自行车...<a href="" class="cl">[详情]</a></p>
+          <div style="border-top:1px dotted #333; padding:0px 0px 15px 0px;"></div>
+          <a>
+          <li class="f14 lh180">漳靖打造同城化"桥头堡" 将实现30分钟内通达 </li>
+          </a> <a>
+          <li class="f14 lh180">漳州地热资源丰富 温泉旅游地产迎来发展新机遇</li>
+          </a> </div>
+      </div>
+      <div class="panel panel-primary mt20" style="width:338px">
+        <div class="panel-heading">
+          <h3 class="panel-title ">人气指数</h3>
+        </div>
+        <div class="panel-body " >
+          <p class="f14 lh150">区域排行榜：第8名</p>
+          <p class="f14 lh150">团购人数：64人</p>
+          <p class="f14 lh150">购房问答：52条</p>
+          <p class="f14 lh150">访问人数：11222人</p>
+          <p class="f14 lh150">今日访问：32人</p>
+          <p class="f14 lh150">昨日访问：165人</p>
+          <p class="f14 lh150">欢迎访问厦门锦绣华城网上售楼处！</p>
+          <div style="border-top:1px dotted #333; padding:0px 0px 15px 0px;"></div>
+          <table width="300px">
+            <tr>
+              <td  style="text-align:center"> 共<span class="cr">33</span>人看过 </td>
+              <td style="text-align:center"> 共<span class="cr">33</span>人想去 </td>
+            </tr>
+            <tr>
+              <td style="text-align:center"><a  class="btn cw" style="background:#f65c52">我已看过</a></td>
+              <td style="text-align:center"><a  class="btn cw" style="background:#f65c52">我很想去</a></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="panel panel-primary mt20" style="width:338px">
+        <div class="panel-heading">
+          <h3 class="panel-title ">楼盘在线问答 <a href="#"  class="pull-right f14">更多></a></h3>
+        </div>
+        <div class="panel-body " >
+          <div class="pr_ifno_zx">
+            <p align="center" class=" pt20">美房购房交流群：</p>
+            <P align="center" class="cl">11122111 <a  href="" style="float:right" class="cl ">进入群> &nbsp;</a></P>
+          </div>
+          <p  class="cr">问：乐美颂是一梯几户的 华女士(1515518****)</p>
+          <p>答：您好,这里是House365新房中心，大华锦绣华城乐美颂是一梯三户的。(2014.02.26)</p>
+          <div style="border-top:1px dotted #333; padding:0px 0px 15px 0px;"></div>
+          <p class="cr">问：请问你们靠近地铁吗？周变交通怎么样?小户型有吗？ 张先生(1865296****)</p>
+          <p>答：您好,这里是House365新房中心，以后宁天城际二期会有地铁，鼓珍线（可达鼓...(2014.02.25)</p>
+          <table width="300px">
+            <tr>
+              <td style="text-align:center"><a  class="btn cw" style="background:#f65c52">查看回复</a></td>
+              <td style="text-align:center"><a  class="btn cw" style="background:#f65c52">我要提问</a></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!--end left-->
+    <div class="pull-left  ml30">
+      <div  class="pr_info_1">
+        <h4  class="pt20">锦绣华城基本信息</h4>
+        <div style="border-top:1px dotted #333; padding:0px 0px 15px 0px;"></div>
+        <p><strong class="f14">参考均价：</strong><span class="cr  f20">11000元/㎡</span></p>
+        <p><strong class="f14">项目地址：</strong> <span class="cl">[江北·浦口区] </span>浦口区浦珠北路59号（浦珠北路和柳州南路交汇处）楼盘地图</p>
+        <p><strong class="f14">主力户型：</strong><span class="cl">79㎡（高层）92㎡（高层）122㎡（洋房）</span></p>
+        <p><strong class="f14">建筑类别：</strong>多层,高层,小高层</p>
+        <p><strong class="f14">项目特色：</strong><span class="cl">花园洋房、江景房、学区房、打折优惠楼盘、团立方楼盘</span></p>
+        <p><strong class="f14">物业类别：</strong>住宅、别墅</p>
+        <p><strong class="f14">交房标准：</strong>毛坯</p>
+        <p><strong class="f14">建筑面积：</strong>25万m²</p>
+        <p><strong class="f14">开 发 商：</strong>南京大华投资发展有限公司</p>
+        <p><strong class="f14">开盘时间：</strong>3.8日开乐美颂</p>
+        <p><strong class="f14">公   摊：</strong>约23%</p>
+        <p><strong class="f14">车位情况：</strong>3923</p>
+        <p><strong class="f14 mb10">售楼地址：</strong>浦口区浦珠北路59号（浦珠路南侧 长江北侧）</p>
+        <div style="border-top:1px dotted #333; padding:0px 0px 15px 0px; "></div>
+        <p class="cl"><a target="_blank"  class="cl" href="">点击查看朗诗玲珑屿详细信息>></a> <a class="pull-right">退订</a><a class="cl pull-right mr20">开盘动免费态订阅</a></p>
+      </div>
+      <div class=" pull-left mt10 ">
+        <div class="title3_l">
+          <p>活动</p>
+        </div>
+        <div class="title3_r" align="right" style="width:678px;"> <a href="">更多</a> </div>
+        <table width="800px"  border="0" >
+          <tr>
+            <td colspan="2" class="pl15"><table class="mt20">
+                <tr>
+                  <td width="290px;" ><img src="upload/img/ad5.gif" class=" img-polaroid"  style="width:270px" ></td>
+                  <td><p class=" f20 cl"> 锦绣华城：同安大型湿地公园就在家门口</p>
+                    <p class="ch">2014年2月26日更新</p>
+                    <p>MEIFANG消息 东溪流域彻底整治、清风园扩建，今年同安东溪西洋溪段首个6万平开放式湿地公园打造在即、东溪沿岸不行、建，今年同安东溪西洋溪段首个6万平开放式湿地公园打造在即、东溪沿岸不行、自行车自行车...<a class="cr">[详情]</a></p></td>
+                </tr>
+              </table></td>
+          </tr>
+          <tr>
+            <td colspan="2"><div class="ml20 mr20">
+                <p class="f16 lh150">禹州地产：连夺五项大奖 载誉全国领跑海西 <span class="ch pull-right f12"> 2014年2月26日更新</span></p>
+                <p class="f16 lh150">禹州地产：连夺五项大奖 载誉全国领跑海西 <span class="ch pull-right f12"> 2014年2月26日更新</span></p>
+                <p class="f16 lh150">禹州地产：连夺五项大奖 载誉全国领跑海西 <span class="ch pull-right f12"> 2014年2月26日更新</span></p>
+              </div></td>
+          </tr>
+        </table>
+        <div class="title3_l">
+          <p>看房报告</p>
+        </div>
+        <div class="title3_r" align="right" style="width:678px;"> <a href="">更多</a> </div>
+        <div class="clearfix"></div>
+        <div class="pt10 m10" style="width:780px;">
+          <p class=" f16 cl"> [报告] <span class="label" style="background:#f65c52">最新</span> 景海湾一期别墅均封顶   4栋高层建至11-14层不等 <span class="ch f13">（2014-02-26）</span></p>
+          <p>MEIFANG消息 东溪流域彻底整治、清风园扩建，今年同安东溪西洋溪段首个6万平开放式湿地公园打造在即、东溪沿岸不行、建，今年同安东溪西洋溪段首个6万平开放式湿地公园打造在即、东溪沿岸不行、自行车自行车...<a class="cr">[详情]</a></p>
+          <p class=" f16 cl"> [报告]     景海湾一期别墅均封顶   4栋高层建至11-14层不等 <span class="ch f13">（2014-02-26）</span></p>
+          <p class=" f16 cl"> [报告]    景海湾一期别墅均封顶   4栋高层建至11-14层不等 <span class="ch f13">（2014-02-26）</span></p>
+          <p class=" f16 cl"> [报告]    景海湾一期别墅均封顶   4栋高层建至11-14层不等 <span class="ch f13">（2014-02-26）</span></p>
+        </div>
+        <div class="title3_l">
+          <p>业主论坛</p>
+        </div>
+        <div class="title3_r" align="right" style="width:678px;"> <a href="">更多</a> </div>
+        <div class="clearfix"></div>
+        <div  style="width:800px"  class="mt20">
+          <div  style="border-bottom:1px dotted #CCC">
+            <p class="f16 lh200">目前大华锦绣华城有<span class="cr">4844</span>名网友在线交流， 帖子总数:<span class="cr">4844</span>条，网友评分:<span class="cr">★</span><span class="cr">★</span><span class="cr">★</span><span class="cr">★</span><span class="cr">★</span>
+            <p> 
+          </div>
+          <table width="100%" class="f14 lh180 mt10">
+            <tr>
+              <td><a>【韶韶茶馆-江宁分馆】三八女神节，留下你对心中女神</a>
+              <td>
+              <td> 43/1049</td>
+              <td>2014-03-07</td>
+            </tr>
+            <tr>
+              <td><a>【韶韶茶馆-江宁分馆】三八女神节，留下你对心中女神</a>
+              <td>
+              <td> 43/1049</td>
+              <td>2014-03-07</td>
+            </tr>
+            <tr>
+              <td><a>【韶韶茶馆-江宁分馆】三八女神节，留下你对心中女神</a>
+              <td>
+              <td> 43/1049</td>
+              <td>2014-03-07</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <!--底部左边-->
+    <div class=" prhxtall pull-left  mt20">
+      <div class="title3_l">
+        <p>鸟瞰图</p>
+      </div>
+      <div class="title3_r" align="right" style="width:785px;"> </div>
+      <div class="clearfix"></div>
+      <div style="margin:20px 0px 20px 20px;"> <img class="img-rounded" src="upload/img/nk.gif" style="width:800px;"> </div>
+      <div class="title3_l">
+        <p>户型图</p>
+      </div>
+      <div class="title3_r" align="right" style="width:785px;"> <a href="">更多</a> </div>
+      <div class="clearfix"></div>
+      <div  class="prhxtinfo pull-left ml10 mr10 "> <img  src="upload/img/hxt.gif" class="img-polaroid" style="padding:20px 10px 20px 10px; width:236px ; height:118px">
+        <table align="center">
+          <tr>
+            <td  colspan="2"><h4 class="cl">画虎国际f-3 e-2户型图 92m&sup2;</h4></td>
+          </tr>
+          <tr>
+            <td> 户型 ：3室 2厅 </td>
+            <td> 面积96m&sup2; </td>
+          </tr>
+          <tr>
+            <td> 浏览：1660次 </td>
+            <td><span class="label label-important">查看评论</span></td>
+          </tr>
+        </table>
+      </div>
+      <div  class="prhxtinfo pull-left ml10 mr10 "> <img  src="upload/img/hxt.gif" class="img-polaroid" style="padding:20px 10px 20px 10px; width:236px ; height:118px">
+        <table align="center">
+          <tr>
+            <td  colspan="2"><h4 class="cl">画虎国际f-3 e-2户型图 92m&sup2;</h4></td>
+          </tr>
+          <tr>
+            <td> 户型 ：3室 2厅 </td>
+            <td> 面积96m&sup2; </td>
+          </tr>
+          <tr>
+            <td> 浏览：1660次 </td>
+            <td><span class="label label-important">查看评论</span></td>
+          </tr>
+        </table>
+      </div>
+      <div  class="prhxtinfo pull-left ml10 mr10 "> <img  src="upload/img/hxt.gif" class="img-polaroid" style="padding:20px 10px 20px 10px; width:236px ; height:118px">
+        <table align="center">
+          <tr>
+            <td  colspan="2"><h4 class="cl">画虎国际f-3 e-2户型图 92m&sup2;</h4></td>
+          </tr>
+          <tr>
+            <td> 户型 ：3室 2厅 </td>
+            <td> 面积96m&sup2; </td>
+          </tr>
+          <tr>
+            <td> 浏览：1660次 </td>
+            <td><span class="label label-important">查看评论</span></td>
+          </tr>
+        </table>
+      </div>
+      <div class="clearfix"></div>
+      <div class="title3_l">
+        <p>楼盘相册</p>
+      </div>
+      <div class="title3_r" align="right" style="width:785px;"><a href="">更多</a> </div>
+      <div class="clearfix"></div>
+      <div  class="prhxtinfo pull-left ml10 mr10 "> <img  src="upload/img/ad7.gif" class="img-polaroid" style="padding:20px 10px 20px 10px; width:236px ; height:118px">
+        <h4 class="cl" align="center">画虎国际f-3 e-2户型图 92m&sup2;</h4>
+        <p align="center">浏览：<span class="cr">1660</span>次 </p>
+      </div>
+      <div  class="prhxtinfo pull-left ml10 mr10 "> <img  src="upload/img/ad7.gif" class="img-polaroid" style="padding:20px 10px 20px 10px; width:236px ; height:118px">
+        <h4 class="cl" align="center">画虎国际f-3 e-2户型图 92m&sup2;</h4>
+        <p align="center">浏览：<span class="cr">1660</span>次 </p>
+      </div>
+      <div  class="prhxtinfo pull-left ml10 mr10 "> <img  src="upload/img/ad7.gif" class="img-polaroid" style="padding:20px 10px 20px 10px; width:236px ; height:118px">
+        <h4 class="cl" align="center">画虎国际f-3 e-2户型图 92m&sup2;</h4>
+        <p align="center">浏览：<span class="cr">1660</span>次 </p>
+      </div>
+      <div class="clearfix"></div>
+      <div class="title3_l">
+        <p>周边地图</p>
+      </div>
+      <div class="title3_r" align="right" style="width:785px;"><a href="">更多</a> </div>
+      <div class="clearfix"></div>
+      <div class="m10"  style="width:780px;"> <img src="upload/img/jtdt.gif" class=" ml30 mt10 mb10">
+        <P class="f14"><strong>周边交通：</strong></p>
+        <p class="f14"> 公交：现场售楼处：柳州路198号（公交132、151、175路"威尼斯水城"站下）；</p>
+        <p class="f14"> 地铁：三号线 浦珠路站</p>
+        <p class="f14"> 从新街口到威尼斯水城的自驾路线：先上汉中路，再进入虎踞南路，沿虎踞南路行驶400米，直行进入虎								踞路，沿虎踞路行驶2.2公里，进入虎踞北路。</p>
+        <P class="f14"><strong>周边配套：</strong></p>
+        <p class="f14"> 小区内部配套:游艇码头、社区巴士、学校、幼儿园</p>
+        <p class="f14"> 中小学:小学两所，中学一所</p>
+        <p class="f14"> 幼儿园:9所</p>
+        <p class="f14">综合商场:超市、酒店</p>
+      </div>
+      <div class="clearfix"></div>
+      <div class="title3_l">
+        <p>我要团购</p>
+      </div>
+      <div class="title3_r" align="right" style="width:785px;"> </div>
+      <div class="clearfix"></div>
+      <table style="font-size:14px; margin-top:10px;">
+        <tr>
+          <td width="300px;">姓名：
+            <input  type="text"  >
+            <span class="cr">*</span></td>
+          <td width="300px;">性别：
+            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+            男
+            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+            女</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>预算：
+            <input type="text">
+            万元</td>
+          <td>面积：
+            <input  type="text">
+            m&sup2;</td>
+          <td><input class="btn cw" value="我要贷款" style="width:96px; background:#f65c52"></td>
+        </tr>
+        <tr>
+          <td>手机：
+            <input type="text">
+            <span class="cr">*</span></td>
+          <td>邮箱：
+            <input  type="text"></td>
+          <td><input class="btn cw" value="我要团购" style="width:96px;background:#f65c52"></td>
+        </tr>
+      </table>
+    </div>
+    
+    <!--end 底部左边--> 
+    <!--底部右边-->
+    <div class="pull-left ml20">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title ">同价位楼盘 <a href="#"  class="pull-right f14">更多></a></h3>
+        </div>
+        <div class="panel-body " >
+          <table class="table table-condensed">
+            <thead>
+              <tr style="color:#f65c52">
+                <th>楼盘名称</th>
+                <th>均价</th>
+                <th>对比</th>
+              </tr>
+            </thead>
+            <tr>
+              <td>华府国际</td>
+              <td>8000元/m&sup2 </td>
+              <td>对比</td>
+            </tr>
+            <tr>
+              <td>华府国际</td>
+              <td>8000元/m&sup2 </td>
+              <td>对比</td>
+            </tr>
+            <tr>
+              <td>华府国际</td>
+              <td>8000元/m&sup2 </td>
+              <td>对比</td>
+            </tr>
+            <tr>
+              <td>华府国际</td>
+              <td>8000元/m&sup2 </td>
+              <td>对比</td>
+            </tr>
+            <tr>
+              <td>华府国际</td>
+              <td>8000元/m&sup2 </td>
+              <td>对比</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title ">周边楼盘位楼盘 <a href="#"  class="pull-right f14">更多></a></h3>
+        </div>
+        <div class="panel-body " >
+          <table class="table table-condensed">
+            <thead>
+              <tr style="color:#f65c52">
+                <th>楼盘名称</th>
+                <th>均价</th>
+                <th>对比</th>
+              </tr>
+            </thead>
+            <tr>
+              <td>华府国际</td>
+              <td>8000元/m&sup2 </td>
+              <td>对比</td>
+            </tr>
+            <tr>
+              <td>华府国际</td>
+              <td>8000元/m&sup2 </td>
+              <td>对比</td>
+            </tr>
+            <tr>
+              <td>华府国际</td>
+              <td>8000元/m&sup2 </td>
+              <td>对比</td>
+            </tr>
+            <tr>
+              <td>华府国际</td>
+              <td>8000元/m&sup2 </td>
+              <td>对比</td>
+            </tr>
+            <tr>
+              <td>华府国际</td>
+              <td>8000元/m&sup2 </td>
+              <td>对比</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title ">热门楼盘推荐 <a href="#"  class="pull-right f14">更多></a></h3>
+        </div>
+        <div class="panel-body " >
+          <table class="table table-condensed">
+            <thead>
+              <tr style="color:#f65c52">
+                <th>楼盘名称</th>
+                <th>均价</th>
+                <th>板块</th>
+              </tr>
+            </thead>
+            <tr>
+              <td>华府国际</td>
+              <td>8000元/m&sup2 </td>
+              <td>芗城</td>
+            </tr>
+            <tr>
+              <td>华府国际</td>
+              <td>8000元/m&sup2 </td>
+              <td>芗城</td>
+            </tr>
+            <tr>
+              <td>华府国际</td>
+              <td>8000元/m&sup2 </td>
+              <td>芗城</td>
+            </tr>
+            <tr>
+              <td>华府国际</td>
+              <td>8000元/m&sup2 </td>
+              <td>芗城</td>
+            </tr>
+            <tr>
+              <td>华府国际</td>
+              <td>8000元/m&sup2 </td>
+              <td>芗城</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title ">购房工具 <a href="#"  class="pull-right f14">更多></a></h3>
+        </div>
+        <div class="panel-body " >
+          <table  style="width:215px;">
+            <tr>
+              <td><a class=" m20" href=""> <img  src="img/tool1.gif" ></a></td>
+              <td><a class=" m20" href=""> <img  src="img/tool2.gif" ></a></td>
+            </tr>
+            <tr>
+              <td><a class=" m20" href=""> <img  src="img/tool3.gif" ></a></td>
+              <td><a class=" m20" href=""> <img  src="img/tool4.gif" ></a></td>
+            </tr>
+            <tr>
+              <td><a class=" m20" href=""> <img  src="img/tool5.gif" ></a></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">帮你找房</h3>
+        </div>
+        <div class="panel-body ml20 " >
+          <button class="btn btn-mini" type="button" style="height:28px; width:58px">区域</button>
+          <select name="area" id="area" class="selectS" style="margin:3px 0px 0px 0px">
+            <option value=''>芗城区</option>
+            <option value='1'>5漳州港</option>
+            <option value='2'>龙海</option>
+          </select>
+          <button class="btn btn-mini" type="button" style="height:28px; width:58px">板块</button>
+          <select name="area" id="area" class="selectS " style="margin:3px 0px 0px 0px">
+            <option value=''>芗城区</option>
+            <option value='1'>5漳州港</option>
+            <option value='2'>龙海</option>
+          </select>
+          <button class="btn btn-mini" type="button" style="height:28px; width:58px">类型</button>
+          <select name="area" id="area" class="selectS " style="margin:3px 0px 0px 0px">
+            <option value=''>芗城区</option>
+            <option value='1'>5漳州港</option>
+            <option value='2'>龙海</option>
+          </select>
+          <input type="text" class="form-control mt10" name="keyword" 
+        id="keyword" placeholder="请输入关键字" style="width:110px;">
+          <button type="submit" class="btn btn-danger btn-mini" style="height:28px; width:58px">搜索</button>
+        </div>
+      </div>
+    </div>
+    <!--end 底部--> 
+    
+  </div>
+  <!--end pr_info--> 
+  
+</div>
+<!--con end--> 
+<!--footer-->
+<div class="text-center  projectList pb5"> <a>关于美房</a><a>|</a><a>联系我们</a><a>|</a><a>网络营销</a><a>|</a><a>招聘信息</a><a>|</a><a>版权声明</a><a>|</a><a>网站地图</a> </div>
+<div class="text-center"> &copy;2014&nbsp;&nbsp;71zls&nbsp;&nbsp;版权所有 <a href="http://www.miitbeian.gov.cn" target="_blank">闽ICP备13021172号</a> </div>
+<!-- jQuery 1.7.2 or higher --> 
+
+<!-- Optional, bootstrap javascript library --> 
+<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script> 
+
+<!--[if lte IE 6]>
+  <!-- bsie js 补丁只在IE6中才执行 -->
+  <script type="text/javascript" src="js/bootstrap-ie.js"></script>
+  <![endif]-->
+
+</body>
+</html>

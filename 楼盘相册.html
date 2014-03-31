@@ -1,0 +1,275 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+<!--[if lte IE 6]>
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-ie6.css">
+<![endif]-->
+<!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css" href="bootstrap/css/ie.css">
+<![endif]-->
+<link rel="stylesheet" href="stylesheets/custom.css">
+<link rel="stylesheet" href="stylesheets/base.css">
+<link rel="stylesheet" href="stylesheets/common.css">
+<link rel="stylesheet" href="stylesheets/font-awesome.min.css">
+<!--地产圈人物滚动-->
+<script type="text/javascript" src="js/ad_ls.js"></script>
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+$(window).scroll(function(){
+  $("#toc_container").css("top",Math.max(0,160-$(this).scrollTop()));
+});
+</script>
+</head>
+
+<body >
+<div id="miniTop">
+  <div  class="miniLogin">
+    <label>用户名：</label>
+    <input id="username" class="loginTxtInt" type="text" name="username">
+    <label>密码：</label>
+    <input id="password" class="loginTxtInt" type="password" name="password">
+    <input type="hidden" value="login" name="action">
+    <input type="hidden" value="3" name="r">
+    <input class="loginBut" type="submit" value="登录">
+    <a class="regBut" >注册</a> </div>
+  <div  class="minimg"> <img  src="img/wb.png"/> </div>
+  <div  class="minimg ml5"> <img  src="img/style.png"  style=" height:20px;"/> </div>
+  <div class="miniright"> <a href="">首页</a> <a href="">团购</a> <a href="">新房</a> <a href="">二手房</a> </div>
+</div>
+<div class="container">
+  <div class="pull-left mt20"> <img  src="img/logo.gif"/> </div>
+  <div class="  pull-left f16  pt55 "> <span  class="cr mr10">漳州</span> <a href="">厦门</a> </div>
+  <div class="pull-left mt30 ml30">
+    <div class="tabbable "> 
+      <!-- Only required for left/right tabs -->
+      <ul  id="myTab" class="nav nav-tabs"  style="margin:0">
+        <li class="active "><a href="#tab1" data-toggle="tab" class="pl20 pr20">综合</a></li>
+        <li><a href="#tab2" data-toggle="tab">新房</a></li>
+        <li><a href="#" data-toggle="tab">租房</a></li>
+        <li><a href="#" data-toggle="tab">团购</a></li>
+        <li><a href="#" data-toggle="tab">专题</a></li>
+      </ul>
+      <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade active in " id="tab1">
+          <form action="{APP_PATH}index.php" class="form-inline  m0" role="form" name="myform" method="get">
+            <input type="text" class="form-control" name="keyword"  id="keyword" placeholder="请输入关键字" style="width:625px;">
+            <button type="submit" class="btn btn-danger">搜索</button>
+          </form>
+        </div>
+        <div class="tab-pane" id="tab2">
+          <form action="{APP_PATH}index.php" class="form-inline  m0" role="form" name="myform" method="get">
+            <select name="catid" id="catid" class="form-control selectS">
+              <option  value='9'>所属区域</option>
+              <option value="">芗城区</option>
+              <option value="">龙文区</option>
+              <option value="">龙文区</option>
+            </select>
+            <select name="bankuai" id="price" class="form-control selectS">
+              <option value=''>所属板块</option>
+              <option value='1'>城西</option>
+              <option value='2'>城西</option>
+            </select>
+            <select name="city" id="city" class="form-control selectS">
+              <option value=''>物业类型</option>
+              <option value=''>酒店式公寓</option>
+              <option value=''>普通住宅</option>
+            </select>
+            <input type="text" class="form-control" name="keyword"  id="keyword" placeholder="请输入关键字" style="width:305px;">
+            <button type="submit" class="btn btn-danger">搜索</button>
+            <input type="hidden" name="m" value="content">
+            <input type="hidden" name="c" value="index">
+            <input type="hidden" name="a" value="searchpr">
+            <input type="hidden" name="dosubmit" value="1">
+          </form>
+        </div>
+        <div class="tab-pane" id="tab3"> 
+          <!--预留--> 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--导航-->
+<div style="height:70px;"> </div>
+<div class="newnav" id="toc_container" align="center" > <a href="#">资讯</a>| <a  href="#">新房</a>| <a  href="#">团购</a>| <a  href="#">地图找房</a>| <a  href="#">租房</a>| <a  href="#">二手房</a> </div>
+<!--header end-->
+<div class="container">
+  <div class=" pr_title pull-left mb10">
+    <h2 class="pull-left">大华锦绣化成</h2>
+    <input class="btn pull-left mt20 f12 ml10" type="button" value="在售" style=" background:#f65c52; color:#FFF">
+    <p class="pull-left pt30 pl10">(项目名称:大华锦绣华城)</p>
+  </div>
+  <div class="clearfix"></div>
+  <div class="prnav ">
+    <div style="background:url(img/prt.gif); height:40px; width:104px;" class="pull-left"> <a  href="#"  class="ml10" style="padding:0">楼盘首页</a> </div>
+    <div style="background:url(img/prt1.gif);height:40px; width: 1066px; background-repeat:repeat-x" class="pull-left"> <a href="#"> 项目介绍 </a> <a href="#" class="active">户型图 </a> <a href="#"  >销售动态</a> <a href="#">价格行情 </a> <a href="#">交通配套 </a> <a href="#">楼盘相册</a> </div>
+  </div>
+  <div class=" clearfix"></div>
+  <!--户型图-->
+  <div class=" prhxt mt20 pull-left">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title ">相册分类 </h3>
+      </div>
+      <div class="panel-body " >
+        <h4  class=" f16 mt5 mb5">效果图（4）</h4>
+        <h4  class=" f16 mt5 mb5">交通图（1）</h4>
+        <h4  class=" f16 mt5 mb5">户型图（4）</h4>
+        <h4  class=" f16 mt5 mb5">实景图（61）</h4>
+        <h4  class=" f16 mt5 mb5">样板图（32）</h4>
+        <a>
+        <li>客厅 (2)</li>
+        </a> <a>
+        <li>厨房(2)</li>
+        </a> <a>
+        <li>卧室 (2)</li>
+        </a> <a>
+        <li>卫浴 (2)</li>
+        </a> <a>
+        <li>书房(2)</li>
+        </a> <a>
+        <li>阳台(3)</li>
+        </a> <a>
+        <li>餐厅(2)</li>
+        </a> <a>
+        <li>其他(2)</li>
+        </a> </div>
+    </div>
+  </div>
+  <!--全部户型图-->
+  <div class=" prhxtall pull-left ml20 mt20">
+    <div class="title3_l">
+      <p>实景图</p>
+    </div>
+    <div class="title3_r" align="right" style="width:785px;"> <a href="" class="cl">浏览最多</a> <span class="cl">|</span> <a href="" class=" pl10 pr10 cl">切换列表页</a> </div>
+    <table width="907px"  border="0" >
+      <tr>
+        <td colspan="2"><div  class="prhxtinfo pull-left ml10 mr10 "> <img  src="upload/img/ad8.gif" class="img-polaroid" style="padding:10px 10px 10px 10px; width:236px ; height:138px">
+            <table>
+              <tr>
+                <td  colspan="2"><h4 class="cl">画虎国际f-3 e-2户型图 92m&sup2;</h4></td>
+              </tr>
+              <tr>
+                <td  colspan="2" align=" center"> 浏览：<span  class="cr">1660</span>次 </td>
+              </tr>
+            </table>
+          </div>
+          <div  class="prhxtinfo pull-left ml10 mr10 "> <img  src="upload/img/ad8.gif" class="img-polaroid" style="padding:10px 10px 10px 10px; width:236px ; height:138px">
+            <table>
+              <tr>
+                <td  colspan="2"><h4 class="cl">画虎国际f-3 e-2户型图 92m&sup2;</h4></td>
+              </tr>
+              <tr>
+                <td  colspan="2" align=" center"> 浏览：<span  class="cr">1660</span>次 </td>
+              </tr>
+            </table>
+          </div>
+          <div  class="prhxtinfo pull-left ml10 mr10 "> <img  src="upload/img/ad8.gif" class="img-polaroid" style="padding:10px 10px 10px 10px; width:236px ; height:138px">
+            <table>
+              <tr>
+                <td  colspan="2"><h4 class="cl">画虎国际f-3 e-2户型图 92m&sup2;</h4></td>
+              </tr>
+              <tr>
+                <td  colspan="2" align=" center"> 浏览：<span  class="cr">1660</span>次 </td>
+              </tr>
+            </table>
+          </div>
+          <div  class="prhxtinfo pull-left ml10 mr10 "> <img  src="upload/img/ad8.gif" class="img-polaroid" style="padding:10px 10px 10px 10px; width:236px ; height:138px">
+            <table>
+              <tr>
+                <td  colspan="2"><h4 class="cl">画虎国际f-3 e-2户型图 92m&sup2;</h4></td>
+              </tr>
+              <tr>
+                <td  colspan="2" align=" center"> 浏览：<span  class="cr">1660</span>次 </td>
+              </tr>
+            </table>
+          </div>
+          <div  class="prhxtinfo pull-left ml10 mr10 "> <img  src="upload/img/ad8.gif" class="img-polaroid" style="padding:10px 10px 10px 10px; width:236px ; height:138px">
+            <table>
+              <tr>
+                <td  colspan="2"><h4 class="cl">画虎国际f-3 e-2户型图 92m&sup2;</h4></td>
+              </tr>
+              <tr>
+                <td  colspan="2" align=" center"> 浏览：<span  class="cr">1660</span>次 </td>
+              </tr>
+            </table>
+          </div>
+          <div  class="prhxtinfo pull-left ml10 mr10 "> <img  src="upload/img/ad8.gif" class="img-polaroid" style="padding:10px 10px 10px 10px; width:236px ; height:138px">
+            <table>
+              <tr>
+                <td  colspan="2"><h4 class="cl">画虎国际f-3 e-2户型图 92m&sup2;</h4></td>
+              </tr>
+              <tr>
+                <td  colspan="2" align=" center"> 浏览：<span  class="cr">1660</span>次 </td>
+              </tr>
+            </table>
+          </div>
+          <div  class="prhxtinfo pull-left ml10 mr10 "> <img  src="upload/img/ad8.gif" class="img-polaroid" style="padding:10px 10px 10px 10px; width:236px ; height:138px">
+            <table>
+              <tr>
+                <td  colspan="2"><h4 class="cl">画虎国际f-3 e-2户型图 92m&sup2;</h4></td>
+              </tr>
+              <tr>
+                <td  colspan="2" align=" center"> 浏览：<span  class="cr">1660</span>次 </td>
+              </tr>
+            </table>
+          </div>
+          <div  class="prhxtinfo pull-left ml10 mr10 "> <img  src="upload/img/ad8.gif" class="img-polaroid" style="padding:10px 10px 10px 10px; width:236px ; height:138px">
+            <table>
+              <tr>
+                <td  colspan="2"><h4 class="cl">画虎国际f-3 e-2户型图 92m&sup2;</h4></td>
+              </tr>
+              <tr>
+                <td  colspan="2" align=" center"> 浏览：<span  class="cr">1660</span>次 </td>
+              </tr>
+            </table>
+          </div>
+          <div  class="prhxtinfo pull-left ml10 mr10 "> <img  src="upload/img/ad8.gif" class="img-polaroid" style="padding:10px 10px 10px 10px; width:236px ; height:138px">
+            <table>
+              <tr>
+                <td  colspan="2"><h4 class="cl">画虎国际f-3 e-2户型图 92m&sup2;</h4></td>
+              </tr>
+              <tr>
+                <td  colspan="2" align=" center"> 浏览：<span  class="cr">1660</span>次 </td>
+              </tr>
+            </table>
+          </div></td>
+      </tr>
+    </table>
+  </div>
+  <div  class="fenye  mr30">
+    <div class="pagination pull-right" style="margin-top:0px;">
+      <ul>
+        <li><a href="#">上一页</a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">下一页</a></li>
+      </ul>
+    </div>
+    <p class="pull-right mt10 mr10">每页显示14条，共有1110条记录</p>
+  </div>
+</div>
+<!--con end--> 
+<!--footer-->
+<div class="text-center  projectList pb5"> <a>关于美房</a><a>|</a><a>联系我们</a><a>|</a><a>网络营销</a><a>|</a><a>招聘信息</a><a>|</a><a>版权声明</a><a>|</a><a>网站地图</a> </div>
+<div class="text-center"> &copy;2014&nbsp;&nbsp;71zls&nbsp;&nbsp;版权所有 <a href="http://www.miitbeian.gov.cn" target="_blank">闽ICP备13021172号</a> </div>
+
+<!-- Optional, bootstrap javascript library --> 
+<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script> 
+
+<!--[if lte IE 6]>
+  <!-- bsie js 补丁只在IE6中才执行 -->
+  <script type="text/javascript" src="js/bootstrap-ie.js"></script>
+  <![endif]-->
+
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+<!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-ie6.css">
+  <![endif]-->
+<!--[if lte IE 7]>
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/ie.css">
+  <![endif]-->
+<link rel="stylesheet" href="stylesheets/custom.css">
+<link rel="stylesheet" href="stylesheets/base.css">
+<link rel="stylesheet" href="stylesheets/common.css">
+<link rel="stylesheet" href="stylesheets/font-awesome.min.css">
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+$(window).scroll(function(){
+  $("#toc_container").css("top",Math.max(0,160-$(this).scrollTop()));
+});
+</script>
+</head>
+<body>
+<div id="miniTop">
+  <div  class="miniLogin">
+    <label>用户名：</label>
+    <input id="username" class="loginTxtInt" type="text" name="username">
+    <label>密码：</label>
+    <input id="password" class="loginTxtInt" type="password" name="password">
+    <input type="hidden" value="login" name="action">
+    <input type="hidden" value="3" name="r">
+    <input class="loginBut" type="submit" value="登录">
+    <a class="regBut" >注册</a> </div>
+  <div  class="minimg"> <img  src="img/wb.png"/> </div>
+  <div  class="minimg ml5"> <img  src="img/style.png"  style=" height:20px;"/> </div>
+  <div class="miniright"> <a href="">首页</a> <a href="">团购</a> <a href="">新房</a> <a href="">二手房</a> </div>
+</div>
+<div class="container">
+  <div class="pull-left mt20"> <img  src="img/logo.gif"/> </div>
+  <div class="  pull-left f16  pt55 "> <span  class="cr mr10">漳州</span> <a href="">厦门</a> </div>
+  <div class="pull-left mt30 ml30">
+    <div class="tabbable "> 
+      <!-- Only required for left/right tabs -->
+      <ul  id="myTab" class="nav nav-tabs"  style="margin:0">
+        <li class="active "><a href="#tab1" data-toggle="tab" class="pl20 pr20">综合</a></li>
+        <li><a href="#tab2" data-toggle="tab">新房</a></li>
+        <li><a href="#" data-toggle="tab">租房</a></li>
+        <li><a href="#" data-toggle="tab">团购</a></li>
+        <li><a href="#" data-toggle="tab">专题</a></li>
+      </ul>
+      <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade active in " id="tab1">
+          <form action="{APP_PATH}index.php" class="form-inline  m0" role="form" name="myform" method="get">
+            <input type="text" class="form-control" name="keyword"  id="keyword" placeholder="请输入关键字" style="width:625px;">
+            <button type="submit" class="btn btn-danger">搜索</button>
+          </form>
+        </div>
+        <div class="tab-pane" id="tab2">
+          <form action="{APP_PATH}index.php" class="form-inline  m0" role="form" name="myform" method="get">
+            <select name="catid" id="catid" class="form-control selectS">
+              <option  value='9'>所属区域</option>
+              <option value="">芗城区</option>
+              <option value="">龙文区</option>
+              <option value="">龙文区</option>
+            </select>
+            <select name="bankuai" id="price" class="form-control selectS">
+              <option value=''>所属板块</option>
+              <option value='1'>城西</option>
+              <option value='2'>城西</option>
+            </select>
+            <select name="city" id="city" class="form-control selectS">
+              <option value=''>物业类型</option>
+              <option value=''>酒店式公寓</option>
+              <option value=''>普通住宅</option>
+            </select>
+            <input type="text" class="form-control" name="keyword"  id="keyword" placeholder="请输入关键字" style="width:305px;">
+            <button type="submit" class="btn btn-danger">搜索</button>
+            <input type="hidden" name="m" value="content">
+            <input type="hidden" name="c" value="index">
+            <input type="hidden" name="a" value="searchpr">
+            <input type="hidden" name="dosubmit" value="1">
+          </form>
+        </div>
+        <div class="tab-pane" id="tab3"> 
+          <!--预留--> 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--导航-->
+<div style="height:70px;"> </div>
+<div class="newnav" id="toc_container" align="center" > <a href="#">资讯</a>| <a  href="#">新房</a>| <a  href="#">团购</a>| <a  href="#">地图找房</a>| <a  href="#">租房</a>| <a  href="#">二手房</a> </div>
+<!--header end-->
+<div class="container">
+  <div class="mb20 pull-left"> 当前位置：<a href="">美房网 </a> > <a href="">漳州房产</a> > <a>漳州新房</a> > <a class="cl">楼盘列表</a> </div>
+  <div class="pull-left " >
+    <div class="panel panel-primary prlistl"  style="margin:0; width:900px;">
+      <div class="panel-heading " style="background:#2db8ad">
+        <h3 class="panel-title cw">快速搜索</h3>
+      </div>
+      <div class="panel-body">
+        <p class="f14"><strong>区域：</strong><a href="#" style="color:#f65c52"><strong>全部</strong></a> <a href="#" class="text-muted">芗城区</a> <a href="#" class="text-muted">龙文区</a></p>
+        <p class="f14"><strong>价格：</strong><a href="#" style="color:#f65c52"><strong>不限</strong></a> <a href="#" class="text-muted">3000-4000</a></p>
+        <p class="f14"><strong>面积：</strong><a href="#" style="color:#f65c52"><strong>不限</strong></a> <a href="#" class="text-muted">50m&sup2;以下</a></p>
+      </div>
+    </div>
+    <div  class="prlist2">
+      <ul id="myTab" class="nav nav-tabs mb5" style="border-bottom: 1px solid #2db8ad;">
+        <li class=" active" style="border-bottom: 1px solid #2db8ad;"><a href="#d_hot" data-toggle="tab">全部</a></li>
+        <li class="" style="border-bottom: 1px solid #2db8ad;"><a href="#lou" data-toggle="tab">热推</a></li>
+        <li class="" style="border-bottom: 1px solid #2db8ad;"><a href="#w_new" data-toggle="tab">即将开盘</a></li>
+        <li class="" style="border-bottom: 1px solid #2db8ad;"><a href="#w_new" data-toggle="tab">优惠促销</a></li>
+        <li class="" style="border-bottom: 1px solid #2db8ad;"><a href="#w_new" data-toggle="tab">已售完</a></li>
+        <li class="" style="border-bottom: 1px solid #2db8ad;"><a href="#w_new" data-toggle="tab">地图找房</a></li>
+      </ul>
+      <div id="myTabContent" class="tab-content ">
+        <div class="tab-pane fade active in  " id="d_hot">
+          <table width="900px;">
+            <tr>
+              <td><div class="btn-toolbar ">
+                  <div class="btn-group"> <a class="btn" href="#">时间<i class="icon-arrow-down"></i></a> <a class="btn" href="#">价格<i class="icon-arrow-down"></i></a> <a class="btn" href="#">点击<i class="icon-arrow-down"></i></a> <a class="btn" href="#">评分<i class="icon-arrow-down"></i></a> <a class="btn" href="#">开盘时间<i class="icon-arrow-down"></i></a> </div>
+                </div></td>
+              <td align="right"> 共有<span class="cr">259</span>个楼盘</td>
+            </tr>
+          </table>
+          <div style="border-bottom:1px  dotted #CCC" class="mb20">
+            <table class="mb20" >
+              <tr>
+                <td width="270px;"><img src="upload/img/ad5.gif" class="img-polaroid"  style=" height:150px; width:230px;"></td>
+                <td width="440px" ><h5 class="cl">[芗城区]鑫荣花苑二期<span class="label label-important ml10 " style="background:#2db8ad">待售 </span></h5>
+                  <p>楼盘动态：鑫荣花苑二期：稀世臻品花园掘金旺铺同步预约</p>
+                  <p>楼吧点评：经过鑫荣花苑二期，看到那开始动工了！</p>
+                  <p>售楼电话：400-69-12580转60025</p>
+                  <p>户型图<span class="cr">(8)</span> 实景图<span class="cr">(31) </span>动态<span class="cr">(23)</span> 点评<span class="cr">(5)</span> 问房<span class="cr">(2)</span> 团购<span class="cr">(56) </span>地图</p></td>
+                <td style="text-align:center" ><h3 class="  mt20 cr">1200元/m &sup2;</h3></td>
+              </tr>
+            </table>
+          </div>
+          <div style="border-bottom:1px  dotted #CCC" class="mb20">
+            <table class="mb20" >
+              <tr>
+                <td width="270px;"><img src="upload/img/ad5.gif" class="img-polaroid"  style=" height:150px; width:230px;"></td>
+                <td width="440px" ><h5 class="cl">[芗城区]鑫荣花苑二期<span class="label label-important ml10 " style="background:#2db8ad">待售 </span></h5>
+                  <p>楼盘动态：鑫荣花苑二期：稀世臻品花园掘金旺铺同步预约</p>
+                  <p>楼吧点评：经过鑫荣花苑二期，看到那开始动工了！</p>
+                  <p>售楼电话：400-69-12580转60025</p>
+                  <p>户型图<span class="cr">(8)</span> 实景图<span class="cr">(31) </span>动态<span class="cr">(23)</span> 点评<span class="cr">(5)</span> 问房<span class="cr">(2)</span> 团购<span class="cr">(56) </span>地图</p></td>
+                <td style="text-align:center" ><h3 class="  mt20 cr">1200元/m &sup2;</h3></td>
+              </tr>
+            </table>
+          </div>
+          <div style="border-bottom:1px  dotted #CCC" class="mb20">
+            <table class="mb20" >
+              <tr>
+                <td width="270px;"><img src="upload/img/ad5.gif" class="img-polaroid"  style=" height:150px; width:230px;"></td>
+                <td width="440px" ><h5 class="cl">[芗城区]鑫荣花苑二期<span class="label label-important ml10 " style="background:#f65c52">在售 </span></h5>
+                  <p>楼盘动态：鑫荣花苑二期：稀世臻品花园掘金旺铺同步预约</p>
+                  <p>楼吧点评：经过鑫荣花苑二期，看到那开始动工了！</p>
+                  <p>售楼电话：400-69-12580转60025</p>
+                  <p>户型图<span class="cr">(8)</span> 实景图<span class="cr">(31) </span>动态<span class="cr">(23)</span> 点评<span class="cr">(5)</span> 问房<span class="cr">(2)</span> 团购<span class="cr">(56) </span>地图</p></td>
+                <td style="text-align:center" ><h3 class="  mt20 cr">1200元/m &sup2;</h3></td>
+              </tr>
+            </table>
+          </div>
+          <div  class="fenye">
+            <div class="pagination pull-right" style="margin-top:0px;">
+              <ul>
+                <li><a href="#">上一页</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">下一页</a></li>
+              </ul>
+            </div>
+            <p class="pull-right mt10 mr10">每页显示14条，共有1110条记录</p>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="lou"> </div>
+        <div class="tab-pane fade" id="w_new"> </div>
+      </div>
+    </div>
+  </div>
+  <div class="pull-left ml20">
+    <div style="width:240px; height:500px;"> <img src="upload/img/rightad.jpg" alt=""> </div>
+  </div>
+</div>
+<!--con end--> 
+<!--footer-->
+<div class="text-center  projectList pb5"> <a>关于美房</a><a>|</a><a>联系我们</a><a>|</a><a>网络营销</a><a>|</a><a>招聘信息</a><a>|</a><a>版权声明</a><a>|</a><a>网站地图</a> </div>
+<div class="text-center"> &copy;2014&nbsp;&nbsp;71zls&nbsp;&nbsp;版权所有 <a href="http://www.miitbeian.gov.cn" target="_blank">闽ICP备13021172号</a> </div>
+<!-- Optional, bootstrap javascript library --> 
+<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script> 
+
+<!--[if lte IE 6]>
+  <!-- bsie js 补丁只在IE6中才执行 -->
+  <script type="text/javascript" src="js/bootstrap-ie.js"></script>
+  <![endif]-->
+
+</body>
+</html>
