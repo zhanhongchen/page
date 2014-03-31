@@ -4,6 +4,7 @@
 #toc_container {
 	position:fixed;
 	top:160px;
+	z-index:9999;
 }
 .newnav { 
 	background:#2db8ad;

@@ -46,7 +46,7 @@ $(window).scroll(function(){
   <div class="pull-left mt20"> <img  src="img/logo.gif"/> </div>
   <div class="  pull-left f16  pt55 "> <span  class="cr mr10">漳州</span> <a href="">厦门</a> </div>
   <div class="pull-left mt30 ml30">
-    <div class="tabbable "> 
+    <div class="tabbable"> 
       <!-- Only required for left/right tabs -->
       <ul  id="myTab" class="nav nav-tabs"  style="margin:0">
         <li class="active "><a href="#tab1" data-toggle="tab" class="pl20 pr20">综合</a></li>
@@ -239,30 +239,18 @@ $(window).scroll(function(){
       </div>
     </div>
     <div class="mt10  pt10 pl5 pb10" style="border: 1px solid #EEEEEE;">
-      <div class="imageRotation">	
-	<div class="imageBox" style="width: 2310px; left: -924px;">
-		<a href="" target="_blank"><img  src="upload/img/01.jpg"></a>
-		<a href="" target="_blank"><img  src="upload/img/02.jpg"></a>
-		<a href="" target="_blank"><img  src="upload/img/03.jpg" ></a>
-		<a href="" target="_blank"><img  src="upload/img/04.jpg"></a>
-        <a href="" target="_blank"><img  src="upload/img/05.jpg"></a>
-	</div>
-    <div class="titleBox">
-    	<p class="active" style="bottom: -40px;"><span>第一张图片标题</span></p>
-        <p style="bottom: -40px;">第二张图片标题</p>
-        <p style="bottom: 0px;">第三张图片标</p>
-        <p style="bottom: -40px;">第四张图片标题</p>
-        <p>第五张图片标题</p>
-    </div>
-	<div class="icoBox">
-		<span class="" rel="1">1</span>
-		<span rel="2" class="">2</span>
-		<span rel="3" class="active">3</span>
-		<span rel="4" class="">4</span>
-        <span rel="5">5</span>
-	</div>
-</div>
-<script type="text/javascript">
+      <div class="imageRotation">
+        <div class="imageBox" style="width: 2310px; left: -924px;"> <a href="" target="_blank"><img  src="upload/img/01.jpg"></a> <a href="" target="_blank"><img  src="upload/img/02.jpg"></a> <a href="" target="_blank"><img  src="upload/img/03.jpg" ></a> <a href="" target="_blank"><img  src="upload/img/04.jpg"></a> <a href="" target="_blank"><img  src="upload/img/05.jpg"></a> </div>
+        <div class="titleBox">
+          <p class="active" style="bottom: -40px;"><span>第一张图片标题</span></p>
+          <p style="bottom: -40px;">第二张图片标题</p>
+          <p style="bottom: 0px;">第三张图片标</p>
+          <p style="bottom: -40px;">第四张图片标题</p>
+          <p>第五张图片标题</p>
+        </div>
+        <div class="icoBox"> <span class="" rel="1">1</span> <span rel="2" class="">2</span> <span rel="3" class="active">3</span> <span rel="4" class="">4</span> <span rel="5">5</span> </div>
+      </div>
+      <script type="text/javascript">
 
 $(document).ready(function() {
 	$(".imageRotation").each(function(){
@@ -317,8 +305,7 @@ $(document).ready(function() {
 		});
 	});
 });
-</script>
-      
+</script> 
     </div>
     <div class="mt10 " style="border: 1px solid #EEEEEE; height:240px; ">
       <div class="title_l">
@@ -555,12 +542,12 @@ $(document).ready(function() {
     </div>
     <div class="clearfix"></div>
     <div class="pull-left">
-      <table width="1170px;" class="mt20" >
-        <tr  >
-          <td style="background: url(img/t_1.gif) no-repeat; margin:0px;" width="107px" height="32px"><a1>名人堂</a1></td>
-          <td  align="right" style="border-bottom:1px solid #EEEEEE;"  ><a href="" class="pr20">更多></a></td>
-        </tr>
-      </table>
+      <div class="pull-left  mt10 mb10">
+        <div class="title3_l">
+          <p>名人堂</p>
+        </div>
+        <div class="title3_r" align="right" style="width:1047px"> <a href="">更多</a> </div>
+      </div>
     </div>
     <!-- picrotate_left start  -->
     <div class="blk_18"> <a class="LeftBotton" onMouseDown="ISL_GoUp_1()" onMouseUp="ISL_StopUp_1()" onMouseOut="ISL_StopUp_1()" href="javascript:void(0);" target="_self"></a>
