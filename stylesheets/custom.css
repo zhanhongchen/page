@@ -54,6 +54,8 @@
 	overflow:hidden;
 	}
 .titleBox p{
+	font-size:16px;
+	font-weight:bolder;
 	position:absolute;
 	bottom:-40px;
 	width:462px;
